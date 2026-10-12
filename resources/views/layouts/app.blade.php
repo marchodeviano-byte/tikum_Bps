@@ -823,6 +823,14 @@
                                 <i class="bi bi-pen-fill"></i>
                                 <span>Manajemen User</span>
                             </a>
+                        </li> 
+
+                        {{-- HELP DESK --}}
+                        <li class="sidebar-item sidebar-item-bottom">
+                            <a href="{{ route('helpdesk') }}" class="sidebar-link" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-headset"></i>
+                                <span>Help Desk</span>
+                            </a>
                         </li>
 
                     </ul>
