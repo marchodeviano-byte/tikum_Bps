@@ -16,6 +16,7 @@ use App\Http\Controllers\Admin\PenilaianTahap1Controller;
 use App\Http\Controllers\Admin\SipeterPertanyaanController;
 use App\Http\Controllers\Admin\PenilaianTahap2PanitiaController;
 use App\Http\Controllers\Admin\AngkaKreditController;
+use App\Http\Controllers\Admin\BantuanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -77,6 +78,15 @@ Route::name('pelaporan.')
         Route::post('/pelaporan/upload', 'upload')->name('upload');
         Route::delete('/pelaporan/{pelaporan}', 'destroy')->name('destroy');
     });
+
+
+
+
+// =========================================================
+// BANTUAN (Help Desk)
+// =========================================================
+Route::get('/bantuan', [BantuanController::class, 'index'])
+    ->name('admin.bantuan.index');
 
 
 // =========================================================

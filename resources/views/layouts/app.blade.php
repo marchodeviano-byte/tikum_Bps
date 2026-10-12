@@ -825,6 +825,15 @@
                             </a>
                         </li>
 
+                        {{-- BANTUAN --}}
+                        <li class="sidebar-item">
+                            <a href="{{ Route::has('admin.bantuan.index') ? route('admin.bantuan.index') : 'javascript:void(0)' }}"
+                                class="sidebar-link" target="_blank" rel="noopener">
+                                <i class="bi bi-question-circle-fill"></i>
+                                <span>Bantuan</span>
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
 
